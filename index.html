@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TVify</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="js/jquery-ui.css">
+
+  </head>
+  <body>
+
+
+    <div id="app-container">
+      <header id="app-header">
+          <h1>TVify</h1>
+      </header>
+
+      <section id="app-body">
+        <p id="nombre">Fecha: <input type="text" id="datepicker"></p>
+        <form class="search-form">
+          <input type="text">
+          <button type="submit">Buscar</button>
+
+        </form>
+        <div class="tv-shows">
+          <div class="loader">Loading...</div>
+
+        </div>
+
+      </section>
+      <footer id="app-footer">
+
+        <p>Hecho por alumnos de platzi</p>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script>
+     $( function() {
+       $( "#datepicker" ).datepicker();
+     } );
+     </script>
+  </body>
+</html>
